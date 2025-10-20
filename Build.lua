@@ -20,7 +20,7 @@ local BuildTypeAdditionalOptions = {
 
 local MainApplication = Application.Create("Main")
 
-MainApplication:AddSource("./Application/Sources/", nil, "*.c")
+MainApplication:AddSource("./Application/", nil, "*.c")
 
 MainApplication.AdditionalCompilerOptions = BuildTypeAdditionalOptions[Seam.Options.BuildType.Value]
 
